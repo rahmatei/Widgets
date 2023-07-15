@@ -10,6 +10,7 @@ import 'package:widgets_example/home.dart';
 import '../cicular_progress_bar/circular_progress_bar_screen.dart';
 import '../clip_path/clip_path_screen.dart';
 import '../custom_scroll_view/custom_scroll_view_screen.dart';
+import '../hive/home_hive.dart';
 
 final router = GoRouter(
   initialLocation: '/',
@@ -25,7 +26,7 @@ final router = GoRouter(
           name:
               'home', // Optional, add name to your routes. Allows you navigate by name instead of path
           path: '/',
-          builder: (context, state) => CircularProgressBar(),
+          builder: (context, state) => HiveHome(),
         ),
         GoRoute(
           name: 'page2',

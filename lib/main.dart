@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'go_router/go_router.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
   runApp(const MyApp());
 }
 
